@@ -1,0 +1,183 @@
+.product-detail-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #222; 
+}
+
+.product-detail-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.product-detail-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.product-detail-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.product-image-carousel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 2;
+}
+
+.product-image-carousel img {
+  max-width: 100%;
+  width: 100%; 
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.product-info-panel {
+  flex: 2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-top: 20px;
+  z-index: 2;
+}
+
+.product-info-panel h1 {
+  font-size: 36px;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.product-info-panel .price {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.product-info-panel .description {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.product-info-panel .btn-buy {
+  display: block;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  background-color: #f5dca9;
+  color: #222;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: center;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.product-info-panel .btn-buy:hover {
+  background-color: #74571d;
+}
+
+@media (max-width: 768px) {
+  .product-detail-container {
+    flex-direction: column;
+  }
+
+  .product-info-panel {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .product-info-panel h1 {
+    font-size: 28px;
+  }
+
+  .product-info-panel .price {
+    font-size: 20px;
+  }
+
+  .product-info-panel .btn-buy {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-info-panel h1 {
+    font-size: 24px;
+  }
+
+  .product-info-panel .price {
+    font-size: 18px;
+  }
+
+  .product-info-panel .btn-buy {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height:100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+

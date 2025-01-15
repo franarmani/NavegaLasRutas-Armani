@@ -1,0 +1,173 @@
+.navbar {
+  background-color: #222;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.navbar-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cart-icon {
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cart-widget {
+    color: #fff;
+    font-size: 24px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center; 
+}
+
+.nav-links.open {
+  display: block;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 20px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ddd;
+}
+
+.navbar-item {
+    margin-left: 20px;
+}
+
+.navbar-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+    color: #ddd;
+}
+
+.cart-link {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.cart-link .nav-link {
+  display: flex;
+  align-items: center;
+}
+
+.cart-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #f5dca9;
+  color: rgb(0, 0, 0);
+  border-radius: 50%;
+  padding: 5px 7px;
+  font-size: 8px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-link {
+    margin: 10px 0;
+  }
+
+  .navbar-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .logo img {
+    height: 30px;
+  }
+
+  .cart-icon {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 769px) {
+  .cart-icon {
+    display: none;
+  }
+}

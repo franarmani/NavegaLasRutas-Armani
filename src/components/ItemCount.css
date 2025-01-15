@@ -1,0 +1,32 @@
+.item-count {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .btn-decrement,
+  .btn-increment,
+  .btn-add {
+    background-color: #f5dca9;
+    color: #222;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .btn-decrement:hover,
+  .btn-increment:hover,
+  .btn-add:hover {
+    background-color: #74571d;
+    color: #fff;
+  }
+  
+  .count {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+  }
